@@ -1,0 +1,51 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplier Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Coded Price Calculator</h2>
+        <div class="input-container">
+            <label for="inputNumber">Enter a number:</label>
+            <input type="number" id="inputNumber">
+        </div>
+        <div class="column-container">
+            <div class="result-container">
+                <h3>Net Price</h3>
+                <div id="multiplicationResult" class="result"></div>
+            </div>
+            <div class="button-container">
+                <div class="button-row">
+                    <button onclick="calculate('A')" data-tooltip="50%">A</button>
+                    <button onclick="calculate('B')" data-tooltip="55%">B</button>
+                    <button onclick="calculate('C')" data-tooltip="60%">C</button>
+                </div>
+                <div class="button-row">
+                    <button onclick="calculate('D')" data-tooltip="65%">D</button>
+                    <button onclick="calculate('E')" data-tooltip="70%">E</button>
+                    <button onclick="calculate('F')" data-tooltip="75%">F</button>
+                </div>
+                <div class="button-row">
+                    <button onclick="calculate('G')" data-tooltip="80%">G</button>
+                    <button onclick="calculate('H')" data-tooltip="85%">H</button>
+                    <button onclick="calculate('I')" data-tooltip="90%">I</button>
+                </div>
+                <div class="button-row">
+                    <button onclick="calculate('Z')" data-tooltip="20%">Z</button>
+                </div>
+            </div>
+            <div class="result-container">
+                <h3>Coded Price</h3>
+                <div id="divisionResult" class="result"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
